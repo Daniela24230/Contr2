@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Путешествие в мире шоколада</title>
+	<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+</script>
+	<style>
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #5b4b4c;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #c3837e;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+body {
+           background-image: url('Фон.jpg');
+		   background-attachment: fixed ;
+        }
+		
+.textbox { 
+  padding: 50px; 
+  background: white; 
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+  border-bottom-left-radius: 90px;
+  border-bottom-right-radius: 90px;
+  margin-left: 50px; 
+  margin-top: 50px;   
+}
+@font-face {
+    font-family: icekingdomfrozencyrillic_bold;
+    src: url('icekingdomfrozencyrillic_bold.ttf');
+   }
+   h1 {
+    font-family: icekingdomfrozencyrillic_bold;
+	font-size: 800%;
+	color: white;
+	margin-left: 90px;
+    margin-top: -30px;	
+	}
+	 a {
+    text-decoration: none;
+	font-size: 150%; 
+	color:#5b4b4c;
+   } 
+   a:hover { 
+    text-decoration: underline;
+    font-size: 150%; 
+    color:#5b4b4c;	
+     }
+	 
+
+.button {text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 30px #eee;
+    border-radius: 10px;
+	border: 2px solid;
+    background-image: linear-gradient(to right, #987474 0%, #5b4b4c 51%, #987474 100%);
+	padding: 5px 20px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+	flex-wrap: wrap;
+	
+
+}
+  </style>
+</head>
+
+<body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style=" text-decoration: none;">&times;</a>
+  <a href="1 главная.html" style=" text-decoration: none;">О Нас</a>
+  <a href="Типы.html"style=" text-decoration: none;">Разновидности</a>
+  <a href="история.html" style=" text-decoration: none;">История</a>
+  <a href="факты.html" style=" text-decoration: none;">Интересное</a>
+  <a href="география.html" style=" text-decoration: none;">География</a>
+  <a href="бренды.html" style=" text-decoration: none;">Шоколадные бренды</a>
+  <a href="магазин.html" style=" text-decoration: none;color:#987474;">Магазин</a>
+</div>
+<div id="main">
+<span onclick="openNav()"><img src="иконка.jpg" height="100px" width="100px" style="margin-left: 390px; margin-top: 20px;"></span>
+<h1>Магазин</h1>
+   <div class="textbox" style="margin-top: -30px;; width: 550px; font-family: icekingdomfrozencyrillic_bold;">
+    <a href="магазин.html" style="padding:10px;">Продукция</a>
+	<a href="магазин(2).html" style="padding:10px;">Оборудование</a>
+	<a href="магазин(3).html" style=" text-decoration:none; padding:10px; color:#987474" >Дополнительно</a>
+</div>
+<form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+<input type="hidden"  name="q" value="Шоколад">
+<ul class="container" style="color:#5b4b4c;  list-style-type : none ;">
+<li><div class="textbox" style="color:#5b4b4c;">
+<img src="Ferrero Rocher.jpg" style="height: 200px;" title="Шоколад Ferrero Rocher">
+<p><input type="radio" name="brand" value="Lindt">Шоколад</h2>
+</div>
+<li><div class="textbox" style="color:#5b4b4c;"> <img src="Ferrero Rocher.jpg" style="height: 200px;" title="Шоколад Ferrero Rocher">
+<p><input type="radio" name="brand" value="Lindt">Шоколад</h2> </div>
+<li><div class="textbox" style="color:#5b4b4c;"> <img src="Ferrero Rocher.jpg" style="height: 200px;" title="Шоколад Ferrero Rocher">
+<p><input type="radio" name="brand" value="Lindt">Шоколад</h2> </div>
+<li><div class="textbox" style="color:#5b4b4c;"> <img src="Ferrero Rocher.jpg" style="height: 200px;" title="Шоколад Ferrero Rocher">
+<p><input type="radio" name="brand" value="Lindt">Шоколад</h2> </div>
+<li><div class="textbox" style="color:#5b4b4c;"> <img src="Ferrero Rocher.jpg" style="height: 200px;" title="Шоколад Ferrero Rocher">
+<p><input type="radio" name="brand" value="Lindt">Шоколад</h2> </div>
+<li><div class="textbox" style="color:#5b4b4c;"> <img src="Ferrero Rocher.jpg" style="height: 200px;" title="Шоколад Ferrero Rocher">
+<p><input type="radio" name="brand" value="Lindt">Шоколад</h2> </div>
+</ul>
+<p><input type="Submit" name="submit" class="button" value="В корзину">
+</form>
+<div class="textbox" style="color:#5b4b4c;"> rjnbr </div>
+</div></body>
+</html>

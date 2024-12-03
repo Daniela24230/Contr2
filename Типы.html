@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <title>Путешествие в мире шоколада</title>
+	 <script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+</script>
+	<style>
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #5b4b4c;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #c3837e;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+body {
+           background-image: url('Фон.jpg');
+		   background-attachment: fixed ;
+        }
+		
+.textbox { 
+  padding: 50px; 
+  background: white; 
+  width: 800px; 
+    border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+  border-bottom-left-radius: 90px;
+  border-bottom-right-radius: 90px;
+   margin-left: 50px; 
+margin-top: 50px;   
+}
+.textbox2 {
+  padding: 50px; 
+  background: white; 
+  width: 800px; 
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+  border-bottom-left-radius: 90px;
+  border-bottom-right-radius: 90px;
+  margin-left: 50px;  
+}
+.textbox3 { 
+  padding: 50px; 
+  background: white; 
+  width: 800px; 
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+    border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  margin-left: 50px;  
+}
+
+@font-face {
+    font-family: icekingdomfrozencyrillic_bold;
+    src: url('icekingdomfrozencyrillic_bold.ttf');
+   }
+   h1 {
+    font-family: icekingdomfrozencyrillic_bold;
+	font-size: 800%;
+	color: white;
+	margin-left: 50px;
+    margin-top: -30px;	
+	}
+	 a {
+    text-decoration: none;
+	font-size: 150%; 
+	color:#5b4b4c;
+   } 
+   a:hover { 
+    text-decoration: underline;
+    font-size: 150%; 
+    color:#5b4b4c;	
+     }
+	 
+	 * {
+   box-sizing: border-box;
+}
+.image-decor {
+   position: relative;
+   display: table;
+   margin: 50px auto;
+   border: 5px solid #fff;
+   box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, .1);
+}
+.image-decor:before, .image-decor:after {
+   content: "";
+   position: absolute;
+   z-index: 2;
+   width: 100px;
+   height: 50px;
+   background: #fff;
+   box-shadow: 0 -10px 10px -5px rgba(0, 0, 0, .1);
+}
+.image-decor:before {
+   left: -50px;
+   bottom: -30px;
+   transform: rotate(30deg);
+}
+.image-decor:after {
+   right: -50px;
+   bottom: -30px;
+   transform: rotate(-30deg);
+}
+.image-decor img {
+   display: block;
+}
+  </style>
+  </head>
+  <body>
+  
+   <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style=" text-decoration: none;">&times;</a>
+  <a href="1 главная.html" style=" text-decoration: none;">О Нас</a>
+  <a href="Типы.html"style=" text-decoration: none; color:#987474;">Разновидности</a>
+  <a href="история.html" style=" text-decoration: none;">История</a>
+  <a href="факты.html" style=" text-decoration: none;">Интересное</a>
+  <a href="география.html" style=" text-decoration: none;">География</a>
+  <a href="бренды.html" style=" text-decoration: none;">Шоколадные бренды</a>
+  <a href="магазин.html" style=" text-decoration: none;">Магазин</a>
+</div>
+  
+<div id="main">
+<span onclick="openNav()"><img src="иконка.jpg" height="100px" width="100px" style="margin-left: 390px; margin-top: 20px;"></span>
+
+  <h1>Разновидности шоколада</h1>
+   <div class="textbox" style="margin-top: -30px; width: 500px; font-family: icekingdomfrozencyrillic_bold;">
+    <ul><li><a href="#чш" >Чёрный шоколад</a>
+	<li><p><a href="#мш">Молочный шоколад</a>
+	<li><p><a href="#бш">Белый шоколад</a>
+	<li><p><a href="#рук">Руководство по сочетанию</a>
+	</ul>
+</div>
+<div class="textbox"  style="color:#5b4b4c;">
+ <h2 id="чш">Черный шоколад</h2>
+ <p>Черный шоколад, содержащий не менее 70% какао, стал популярен не только благодаря своему насыщенному вкусом, но и многочисленным полезным свойствам. Он богат антиоксидантами, которые помогают бороться со свободными радикалами, уменьшая риск развития хронических заболеваний.
+Исследования показывают, что черный шоколад может улучшить работу сердца, снизить уровень холестерина и повысить чувствительность к инсулину. Кроме того, он может способствовать улучшению настроения, благодаря содержанию серотонина и эндорфинов.
+Важно помнить о порционности: несмотря на его пользу, черный шоколад калорийный и следует употреблять его в умеренных количествах. Выбирая шоколад, стоит обратить внимание на состав, избегая продуктов с высоким содержанием сахара и добавок.
+Таким образом, черный шоколад может стать не только вкусным лакомством, но и полезным добавлением к рациону, если употреблять его осознанно.
+<div class="image-decor">
+<img src="чш.png" style="width: 400px; height: 400px;" title="Чёрный шоколад">
+</div>
+</div>
+<div class="textbox2" style="color:#5b4b4c;" >
+ <h2 id="мш" >Молочный шоколад</h2>
+ <p>Молочный шоколад — это один из самых популярных видов шоколада, который содержит какао-порошок, молочный порошок и сахар. Благодаря более мягкому и сладкому вкусу, он нравится многим и часто используется в кондитерских изделиях, десертах и сладостях.
+Основной принцип приготовления молочного шоколада заключается в добавлении молока, что придает ему кремовую текстуру и характерный сладковатый вкус. Однако из-за высокого содержания сахара и жиров его энергетическая ценность значительно выше, чем у черного шоколада.
+Хотя молочный шоколад не так богат антиоксидантами и полезными веществами, как черный, он все равно может приносить удовольствие и улучшать настроение. Вместе с тем стоит помнить о moderation: регулярное потребление в больших количествах может привести к избыточному потреблению калорий.
+В целом, молочный шоколад — это вкусное лакомство, которое лучше всего есть в умеренных порциях, наслаждаясь его мягким вкусом и сладостью.
+<div class="image-decor">
+<img src="мш.png" style="width: 400px; height: 400px;" title="Молочный шоколад">
+</div></div>
+<div class="textbox3"  style="color:#5b4b4c;">
+ <h2 id="бш">Белый шоколад</h2>
+ <p>Белый шоколад — это изысканное лакомство, отличающееся от традиционного шоколада отсутствием какао-порошка. Его основными ингредиентами являются какао-масло, сахар и молочный порошок, что придает ему нежный, сладкий вкус и кремовую текстуру.
+Хотя белый шоколад не содержит антиоксидантов, характерных для темного и молочного шоколада, он все же привлекает внимание благодаря своей универсальности. Его часто используют в кондитерских изделиях, десертах и выпечке. Он прекрасно сочетается с фруктами, а также используется для создания различных глазурей и начинок.
+Следует помнить, что белый шоколад чаще всего содержит высокое количество сахара и калорий, поэтому важно употреблять его в умеренных количествах.
+Таким образом, белый шоколад — это любимое лакомство многих, которое добавляет сладость и богатство вкуса в разнообразные кулинарные произведения.
+<div class="image-decor">
+<img src="бш.png" style="width: 400px; height: 400px;" title="Белый шоколад">
+</div></div>
+<span onclick="openNav()"><img src="иконка.jpg" height="100px" width="100px" style="margin-left: 390px; margin-top: 20px;"></span>
+
+<h1 style="margin-top: -20px;" id="рук">Руководство по сочетанию</h1>
+<div class="textbox"  style="color:#5b4b4c;">
+<p>При выборе шоколада обращайте внимание на следующее:
+<ul>
+<li><b>Содержание какао:</b> Выбирайте шоколад с высоким содержанием какао, чтобы получить более насыщенный вкус и пользу.
+<li><b>Состав:</b> Избегайте шоколада с искусственными добавками, усилителями вкуса или искусственными ароматизаторами. Оптимально, если в составе указаны всего несколько натуральных ингредиентов.
+<li><b>Производитель:</b> Обратите внимание на известные бренды, которые придерживаются высоких стандартов качества.
+</ul>
+</div>
+<div class="textbox2"  style="color:#5b4b4c;">
+<p>Сочетание шоколада с другими продуктами может значительно обогатить его вкус. Вот некоторые советы по сочетанию:
+<ul>
+<li><b>Шоколад и фрукты:</b> Темный шоколад отлично сочетается с кислыми фруктами, такими как малина, вишня или апельсин. Молочный шоколад подходит к бананам и клубнике, а белый шоколад — к манго и ананасу.
+<li><b>Шоколад и орехи:</b> Темный шоколад в сочетании с орехами (например, миндалем, фундуком или грецкими) создаст необычную текстуру и вкусовую глубину.
+<li><b>Шоколад и специи:</b> Добавление специй, таких как корица, чили или морская соль, подчеркнет вкус шоколада. Темный шоколад особенно выигрывает от сочетания с чили или морской солью.
+<li><b>Шоколад и десерты:</b> Экспериментируйте с различными десертами. Темный шоколад отлично подходит для тортов, муссов и пирожных, в то время как молочный шоколад хорош в кешью или печеньях.
+</ul>
+</div>
+<div class="textbox3"  style="color:#5b4b4c;">
+<p>Правильное хранение шоколада поможет сохранить его свежесть и вкус:
+<ul>
+<li><b>Температура:</b> Храните шоколад в прохладном и сухом месте при температуре от 15 до 20 градусов Цельсия.
+<li><b>Упаковка:</b> Если упаковка открыта, лучше всего завернуть шоколад в пергаментную бумагу, а затем в фольгу, чтобы защитить его от влаги и запахов.
+</ul>
+<div class="image-decor">
+<img src="kandinsky-download-1732877310555.png" style="width: 400px; height: 400px;" title="Натюрморт с шоколадом">
+</div></div>
+<span onclick="openNav()"><img src="иконка.jpg" height="100px" width="100px" style="margin-left: 390px; margin-top: 20px;"></span>
+</div>
+   <script crossorigin="anonymous" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script></body>
+</html>

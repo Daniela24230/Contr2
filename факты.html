@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <title>Путешествие в мире шоколада</title>
+	 <script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+</script>
+	<style>
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #5b4b4c;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+
+.sidenav a:hover {
+  color: #c3837e;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+body {
+           background-image: url('Фон.jpg');
+		   background-attachment: fixed ;
+        }
+		
+.textbox { 
+  padding: 50px; 
+  background: white; 
+  width: 800px; 
+    border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+  border-bottom-left-radius: 90px;
+  border-bottom-right-radius: 90px;
+   margin-left: 50px; 
+margin-top: 50px;   
+}
+.textbox2 { 
+  padding: 50px; 
+  background: white; 
+  width: 800px; 
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+  border-bottom-left-radius: 90px;
+  border-bottom-right-radius: 90px;
+  margin-left: 50px;  
+}
+.textbox3 { 
+  padding: 50px; 
+  background: white; 
+  width: 800px; 
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+    border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  margin-left: 50px;  
+}
+
+@font-face {
+    font-family: icekingdomfrozencyrillic_bold;
+    src: url('icekingdomfrozencyrillic_bold.ttf');
+   }
+   h1 {
+    font-family: icekingdomfrozencyrillic_bold;
+	font-size: 800%;
+	color: white;
+	margin-left: 50px;
+    margin-top: -30px;	
+	}
+	 a {
+    text-decoration: none;
+	font-size: 150%; 
+	color:#5b4b4c;
+   } 
+   a:hover { 
+    text-decoration: underline;
+    font-size: 150%; 
+    color:#5b4b4c;	
+     }
+	 * {
+   box-sizing: border-box;
+}
+.image-decor {
+   position: relative;
+   display: table;
+   margin: 50px auto;
+   border: 5px solid #fff;
+   box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, .1);
+}
+.image-decor:before, .image-decor:after {
+   content: "";
+   position: absolute;
+   z-index: 2;
+   width: 100px;
+   height: 50px;
+   background: #fff;
+   box-shadow: 0 -10px 10px -5px rgba(0, 0, 0, .1);
+}
+.image-decor:before {
+   left: -50px;
+   bottom: -30px;
+   transform: rotate(30deg);
+}
+.image-decor:after {
+   right: -50px;
+   bottom: -30px;
+   transform: rotate(-30deg);
+}
+.image-decor img {
+   display: block;
+}
+  </style>
+  </head>
+  <body>
+  
+   <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style=" text-decoration: none;">&times;</a>
+  <a href="1 главная.html" style=" text-decoration: none;">О Нас</a>
+  <a href="Типы.html"style=" text-decoration: none;">Разновидности</a>
+  <a href="история.html" style=" text-decoration: none;">История</a>
+  <a href="факты.html" style=" text-decoration: none;color:#987474;">Интересное</a>
+  <a href="география.html" style=" text-decoration: none;">География</a>
+  <a href="бренды.html" style=" text-decoration: none;">Шоколадные бренды</a>
+  <a href="магазин.html" style=" text-decoration: none;">Магазин</a>
+</div>
+  
+<div id="main">
+<span onclick="openNav()"><img src="иконка.jpg" height="100px" width="100px" style="margin-left: 390px; margin-top: 20px;"></span>
+<h1>Интересные факты</h1>
+<div class="textbox" style="color:#5b4b4c;">
+Некоторые факты о шоколаде способны вас удивить!
+<ul type="disc"><li><b>Изобретение шоколадной плитки:</b> Первая шоколадная плитка была произведена в 1847 году британской компанией Fry & Sons. Это дало старт современной шоколадной индустрии.
+<li><b>Какао как валюта:</b> В древних цивилизациях Мезоамерики, таких как ацтеки, какао-бобы использовались как валюта. Можно было купить за них товары и услуги, что подчеркивает ценность какао.
+<li><b>Шоколад и здоровье:</b> Темный шоколад, содержащий выше 70% какао, считается полезным для сердца благодаря высокому содержанию антиоксидантов. Исследования указывают на его потенциал в снижении артериального давления и улучшении кровообращения.
+<li><b>Шоколадные реки:</b> В самом сердце фабрики Willy Wonka в "Чарли и шоколадной фабрике" нет ничего, кроме шоколадных рек. Хоть это и фантастика, существует настоящее место — в Венесуэле, где течет река с высоким содержанием какао.
+<li><b>Какао-бобы и аромат:</b> Удивительно, но какао-бобы имеют около 600 различных ароматических соединений, что позволяет создавать разнообразные вкусы и ароматы шоколада.
+</ul>
+<div class="image-decor">
+<img src="с лаймом.png" style="height: 400px;" title="Шоколад с лаймом">
+</div>
+</div>
+
+<div class="textbox2" style="color:#5b4b4c;">
+<ul type="disc"><li><b>Шоколад и мозг:</b> Шоколад содержит фенилэтиламин, химическое соединение, которое вызывает чувство радости и счастья. Потребление шоколада может активировать систему "награды" мозга.
+<li><b>Шоколад в космосе:</b> Астронавты даже брали шоколад с собой на космические миссии, поскольку он является отличным источником энергии и многообещающим продуктом для улучшения настроения.
+<li><b>Традиция на праздники:</b> В большинстве стран шоколад стал традиционным подарком на праздники, такие как День Святого Валентина, Пасха и Хэллоуин. Например, в России на Новый год популярны шоколадные конфеты в качестве лакомства.
+<li><b>Чувствительность к шоколаду:</b> У некоторых людей может возникнуть аллергическая реакция на шоколад, чаще всего на ингредиенты, а не на само какао. Это может быть связано с молоком, орехами или другими добавками.
+<li><b>Шоколадный рай:</b> У Экуадора и Ганы есть репутация как у стран с лучшими сортами какао, что делает эти регионы центрами для производства шоколада.
+Эти факты подчеркивают важность шоколада как не только вкусного лакомства, но и культурного, экономического и даже научного явления!
+</ul>
+<div class="image-decor">
+<img src="kandinsky-download-1732876737621.png" style="height: 400px;" title="Шоколад с орехами">
+</div></div>
+<span onclick="openNav()"><img src="иконка.jpg" height="100px" width="100px" style="margin-left: 390px; margin-top: 20px;"></span>
+</div>
+   <script crossorigin="anonymous" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script></body>
+</html>
